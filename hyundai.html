@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients and Gallery</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gradient-box {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #fff;
+        }
+
+        .gradient-box:hover {
+            transform: scale(1.05);
+        }
+
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2rem;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+            display: block; /* Ensures it takes full width */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Примеры градиентов</h1>
+    
+    <p class="text-gradient" style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">Ми вивчаємо градієнти</p>
+
+    <div class="container">
+        <!-- Linear Gradients -->
+        <div class="gradient-box" style="background: linear-gradient(to left, #ff0, #00f);"></div>
+        <div class="gradient-box" style="background: linear-gradient(45deg, #ff0, #00f);"></div>
+        <div class="gradient-box" style="background: linear-gradient(225deg, #ff0, #00f);"></div>
+        <div class="gradient-box" style="background: linear-gradient(225deg, #ff0 50%, #00f 80%);"></div>
+        <div class="gradient-box" style="background: linear-gradient(225deg, #ff0 50%, #00f 50%);"></div>
+        <div class="gradient-box" style="background: linear-gradient(0deg, #ff0 0% 50%, #00f 50% 100%);"></div>
+        <div class="gradient-box" style="background: linear-gradient(180deg, red 25%, darkblue 25% 50%, yellow 50% 75%, darkgreen 75%);"></div>
+        
+        <!-- Radial Gradients -->
+        <div class="gradient-box" style="background: radial-gradient(#ff0, #00f);"></div>
+        <div class="gradient-box" style="background: radial-gradient(#ff0 30%, #00f);"></div>
+        <div class="gradient-box" style="background: radial-gradient(#ff0 30%, #00f 80%);"></div>
+        <div class="gradient-box" style="background: radial-gradient(circle at 25% 25%, #ff0 30%, #00f 80%);"></div>
+        <div class="gradient-box" style="background: radial-gradient(circle at 75% 75%, #ff0 30%, #00f 80%);"></div>
+        
+        <!-- Conic Gradients -->
+        <div class="gradient-box" style="background: conic-gradient(#ff0, #00f);"></div>
+        <div class="gradient-box" style="background: conic-gradient(from 45deg, #ff0, #00f, green, orange, lime, olive);"></div>
+        <div class="gradient-box" style="background: conic-gradient(at 75% 25%, #ff0, #00f, green, orange, lime, olive);"></div>
+        <div class="gradient-box" style="background: repeating-conic-gradient(red 0% 5%, darkblue 5% 10%);"></div>
+        <div class="gradient-box" style="background: repeating-conic-gradient(from 45deg, red 0% 5%, darkblue 5% 10%);"></div>
+        <div class="gradient-box" style="background: repeating-conic-gradient(at 25% 25%, red 0% 5%, darkblue 5% 10%);"></div>
+        <div class="gradient-box" style="background: repeating-conic-gradient(from 45deg at 25% 25%, red 0% 5%, darkblue 5% 10%);"></div>
+        <div class="gradient-box" style="background: linear-gradient(#f00 24.5%, transparent 24.5% 25.5%, #00f 25.5% 49.5%, transparent 49.5% 50.5%, #0f0 50.5% 74.5%, transparent 74.5% 75.5%, #ff0 75.5% 99.5%);"></div>
+    </div>
+
+</body>
+</html>

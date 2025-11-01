@@ -1,0 +1,43 @@
+body{
+	background-color: rgb(191, 255, 182);
+}
+p{
+	background-color: rgb(0, 255, 51);
+	color: rgb(15, 0, 128);
+	font-size: 50px;
+	text-align: center;
+}
+table{
+	border: 2px double rgb(0, 139, 25);
+	font-size: 24px;
+	width: 50%;
+	border-collapse: separate;
+	margin: auto;
+}
+th,td{
+	border: 1px solid rgb(50, 58, 204);
+	width: 25%;
+	height: 1cm;
+}
+tr:hover{
+	background-color: lightgray;
+}
+td:hover,th:hover{
+	background-image: url(https://i.pinimg.com/originals/fd/84/65/fd8465eff2eb4157cc57272d55431fa7.gif);
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: whitesmoke;
+}
+tr:nth-child(odd){
+	background-color: lightsalmon;
+}
+tr:nth-child(even){
+	background-color: lightcyan;
+}
+caption{
+	text-transform: uppercase;
+	font-size: 2em;
+	background: linear-gradient(to left,red, orange, yellow, green, blue, indigo, violet);
+	color: whitesmoke;
+}

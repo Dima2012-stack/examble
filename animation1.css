@@ -1,0 +1,50 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+@keyframes myAnimation1{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+#d1{
+    animation-name: myAnimation1;
+    animation-duration: 5s;
+}
+@keyframes myAnimation2{
+    0%{background-color: red;}
+    25%{background-color: green;}
+    50%{background-color: orange;}
+    75%{background-color: blue;}
+    100%{background-color: yellow;}
+}
+#d2{
+    animation-name: myAnimation2;
+    animation-duration: 5s;
+}
+@keyframes myAnimation3{
+    0%{background-color: red; top: 0px; left: 0px;}
+    25%{background-color: green; top: 0px; left: 400px;}
+    50%{background-color: orange; top: 400px; left: 400px;}
+    75%{background-color: blue; top: 400px; left: 0px;}
+    100%{background-color: yellow; top: 0px; left: 0px;}
+}
+#d3{
+    position: relative;
+    animation-name: myAnimation3;
+    animation-duration: 5s;
+}
+@keyframes myAnimation4{
+    0%{background-color: red; top: 0px; left: 0px;}
+    25%{background-color: green; top: 0px; left: 400px;}
+    50%{background-color: orange; top: 400px; left: 400px;}
+    75%{background-color: blue; top: 400px; left: 0px;}
+    100%{background-color: yellow; top: 0px; left: 0px;}
+}
+#d4{
+    position: relative;
+    animation-name: myAnimation4;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
